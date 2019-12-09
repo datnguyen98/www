@@ -1,0 +1,35 @@
+<provider
+            android:name=".MyContentProvider_Author"
+            android:authorities="com.example.onthick_provider.MyContentProvider_Author"
+            android:enabled="true"
+            android:exported="true"
+            android:multiprocess="true"
+            android:readPermission="com.example.onthick_provider.MyContentProvider_Author.READ_DATABASES"
+            android:writePermission="com.example.onthick_provider.MyContentProvider_Author.WRITE_DATABASES" />
+        <provider
+            android:name=".MyContentProvider_Book"
+            android:authorities="com.example.onthick_provider.MyContentProvider_Book"
+            android:enabled="true"
+            android:exported="true"
+            android:multiprocess="true"
+            android:readPermission="com.example.onthick_provider.MyContentProvider_Book.READ_DATABASE"
+            android:writePermission="com.example.onthick_provider.MyContentProvider_Book.WRITE_DATABASE" />
+<permission
+        android:name="com.example.onthick_provider.MyContentProvider_Book.WRITE_DATABASE"
+        android:label="Write Database"
+        android:protectionLevel="normal" />
+
+    <permission
+        android:name="com.example.onthick_provider.MyContentProvider_Book.READ_DATABASE"
+        android:label="Read Database"
+        android:protectionLevel="normal" />
+
+    <permission
+        android:name="com.example.onthick_provider.MyContentProvider_Author.WRITE_DATABASES"
+        android:label="Write Database"
+        android:protectionLevel="normal" />
+
+    <permission
+        android:name="com.example.onthick_provider.MyContentProvider_Author.READ_DATABASES"
+        android:label="Read Database"
+        android:protectionLevel="normal" />

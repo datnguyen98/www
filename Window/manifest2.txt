@@ -1,0 +1,4 @@
+<uses-permission android:name="com.example.onthick_provider.MyContentProvider_Book.WRITE_DATABASE" />
+    <uses-permission android:name="com.example.onthick_provider.MyContentProvider_Book.READ_DATABASE" />
+    <uses-permission android:name="com.example.onthick_provider.MyContentProvider_Author.WRITE_DATABASES" />
+    <uses-permission android:name="com.example.onthick_provider.MyContentProvider_Author.READ_DATABASES" />
